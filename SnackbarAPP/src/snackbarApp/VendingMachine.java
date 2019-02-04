@@ -2,8 +2,8 @@ package snackbarApp;
 
 public class VendingMachine{
     private static int maxId = 0;
-    private int id;
-    private string name;
+    public int id;
+    private String name;
 
 
     public VendingMachine(String name){
@@ -19,5 +19,9 @@ public class VendingMachine{
 
     public String getName(){
         return name;
+    }
+
+    public int getId() {
+        return id;
     }
 }

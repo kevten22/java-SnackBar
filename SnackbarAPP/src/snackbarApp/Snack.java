@@ -3,7 +3,7 @@ package snackbarApp;
 public class Snack{
     private static int maxId = 0;
     private int id;
-    private string name;
+    public String name;
     private int quantity;
     private double cost;
     private int vendingMachineId;
@@ -13,9 +13,9 @@ public class Snack{
         id = maxId;
 
         this.name = name;
-        this.quantity = quantiy;
+        this.quantity = quantity;
         this.cost = cost;
-        this vendingMachineId = vendingMachineId;
+        this.vendingMachineId = vendingMachineId;
     }
 
     public void setName(String name){
@@ -27,7 +27,7 @@ public class Snack{
     }
 
     public void addQuantity(int quantity){
-        this.quantiy += quantity;
+        this.quantity += quantity;
     }
 
     public void buySnack(int quantity){

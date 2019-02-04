@@ -15,43 +15,43 @@ public class Main{
        Snack s4 = new Snack("Soda", 24, 2.50, v2.id);
        Snack s5 = new Snack("Water", 20, 2.75, v2.id);
 
-       System.out.println("*** Customer Interaction ***")
+       System.out.println("*** Customer Interaction ***");
 
-       c1.purchase(s4.totalCost(4));
+       c1.purchase(s4.getTotalCost(4));
        s4.buySnack(4);
-       System.out.println("Customer 1 buys 3 of snack 4."
-                            + c1.getName() + "remaining cash: " + c1.getCashOnHand()
-                            + " " + s4.getName() + "remaining: " + s4.getQuantity() + "\n");
+       System.out.println("Customer 1 buys 3 of snack 4. "
+                            + c1.getName() + " remaining cash: " + c1.getCashOnHand()
+                            + " " + s4.name + " remaining: " + s4.getQuantity() + "\n");
 
-       c1.purchase(s3.totalCost(1));
+       c1.purchase(s3.getTotalCost(1));
        s3.buySnack(1);
-       System.out.println("Customer 1 buys 1 of snack 3."
-                            + c1.getName() + "remaining cash: " + c1.getCashOnHand()
-                            + " " + s3.getName() + "remaining: " + s3.getQuantity() + "\n");
+       System.out.println("Customer 1 buys 1 of snack 3. "
+                            + c1.getName() + " remaining cash: " + c1.getCashOnHand()
+                            + " " + s3.name + " remaining: " + s3.getQuantity() + "\n");
 
-       c2.purchase(s4.totalCost(2));
+       c2.purchase(s4.getTotalCost(2));
        s4.buySnack(2);
-       System.out.println("Customer 2 buys 2 of snack 4."
-                            + c2.getName() + "remaining cash: " + c2.getCashOnHand()
-                            + " " + s4.getName() + "remaining: " + s4.getQuantity() + "\n");
+       System.out.println("Customer 2 buys 2 of snack 4. "
+                            + c2.getName() + " remaining cash: " + c2.getCashOnHand()
+                            + " " + s4.name + " remaining: " + s4.getQuantity() + "\n");
 
        c1.addCash(10.00);
        System.out.println(c1.getName() + " found $10 and now has $" + c1.getCashOnHand() + "\n");
 
-       c1.purchase(s2.totalCost(1));
+       c1.purchase(s2.getTotalCost(1));
        s2.buySnack(1);
-       System.out.println("Customer 1 buys 1 of snack 2."
-                            + c1.getName() + "remaining cash: " + c1.getCashOnHand()
-                            + " " + s2.getName() + "remaining: " + s2.getQuantity() + "\n");
+       System.out.println("Customer 1 buys 1 of snack 2. "
+                            + c1.getName() + " remaining cash: " + c1.getCashOnHand()
+                            + " " + s2.name + " remaining: " + s2.getQuantity() + "\n");
 
        s3.addQuantity(12);
-       System.out.println(s3.getName() " added 12 more and now has " + s3.getQuantity());
+       System.out.println(s3.name + " added 12 more and now has " + s3.getQuantity());
 
-       c2.purchase(s3.totalCost(3));
+       c2.purchase(s3.getTotalCost(3));
        s3.buySnack(3);
-       System.out.println("Customer 2 buys 3 of snack 3."
-                            + c2.getName() + "remaining cash: " + c2.getCashOnHand()
-                            + " " + s3.getName() + "remaining: " + s3.getQuantity() + "\n");
+       System.out.println("Customer 2 buys 3 of snack 3. "
+                            + c2.getName() + " remaining cash: " + c2.getCashOnHand()
+                            + " " + s3.name + " remaining: " + s3.getQuantity() + "\n");
 
 
     }

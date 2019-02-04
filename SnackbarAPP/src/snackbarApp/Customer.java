@@ -3,7 +3,7 @@ package snackbarApp;
 public class Customer{
     private static int maxId = 0;
     private int id;
-    private string name;
+    private String name;
     private double cashOnHand;
 
 
@@ -19,7 +19,7 @@ public class Customer{
         this.name = name;
     }
 
-    public int getName(){
+    public String getName(){
         return name;
     }
 
